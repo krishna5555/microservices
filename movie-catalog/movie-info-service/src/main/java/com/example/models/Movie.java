@@ -5,6 +5,10 @@ public class Movie {
 	private String id;
 	private String name;
 	
+	public Movie() {
+		
+	}
+	
 	public Movie(String id, String name) {
 		super();
 		this.id = id;
