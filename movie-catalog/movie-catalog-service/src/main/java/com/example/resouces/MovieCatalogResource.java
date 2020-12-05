@@ -30,6 +30,7 @@ public class MovieCatalogResource {
 		//get the ratings of each movie
 		Rating rating = restTemplate.getForObject("http://ratings-data-service/ratingsData/"+movie.getId(), Rating.class);
 		
+		//return the movie catalog
 		return Collections.singletonList(new CatalogItem(movie.getName(), "test", rating.getRating()));
 		
 	}
